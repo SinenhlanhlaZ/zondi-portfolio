@@ -1,0 +1,35 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* 50% on the left, and 50% on the right */
+    gap: 2rem;
+}
+
+.experience__container > div {
+    /* background: var(--color-light); */
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+    transition: var(--transition);
+}
+
+.experience__container h3 {
+    text-align: center;
+}
+
+.experience__details {
+    width: 50%;
+    display: inline-grid;
+    padding: 1rem 0rem;
+}
+
+/* Media queries */
+
+/* Medium sized screens */
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* Small sized screens */
+@media screen and (max-width: 600px) {
+    
+}
