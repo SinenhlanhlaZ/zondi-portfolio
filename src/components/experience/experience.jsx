@@ -31,7 +31,7 @@ const experience = () => {
             <article className='experience__details'>
               <BsCheckCircleFill/>
               <h4>Javascript</h4>
-              <small className='text-light'>Intermediate</small>
+              <small className='text-light'>Experienced</small>
             </article>  
 
             <article className='experience__details'>  
@@ -49,13 +49,13 @@ const experience = () => {
             <article className='experience__details'>
               <BsCheckCircleFill/>
               <h4>React</h4>
-              <small className='text-light'>Beginner</small>
+              <small className='text-light'>Experienced</small>
             </article>
 
             <article className='experience__details'>
               <BsCheckCircleFill/>
               <h4>Typescript</h4>
-              <small className='text-light'>Beginner</small>
+              <small className='text-light'>Intermediate</small>
             </article>
               
           </div>
@@ -76,19 +76,19 @@ const experience = () => {
             <article className='experience__details'>
               <BsCheckCircleFill/>
               <h4>Springboot</h4>
-              <small className='text-light'>Intermediate</small>
+              <small className='text-light'>Experienced</small>
             </article>  
 
             <article className='experience__details'>
               <BsCheckCircleFill/>
               <h4>Quarkus</h4>
-              <small className='text-light'>Beginner</small>
+              <small className='text-light'>Intermediate</small>
             </article>  
 
             <article className='experience__details'>
               <BsCheckCircleFill/>
               <h4>MySQL</h4>
-              <small className='text-light'> Intermediate </small>
+              <small className='text-light'> Experienced </small>
             </article>
 
             <article className='experience__details'>

@@ -1,87 +1,118 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-//import IMG2 from '../../assets/portfolio2.jpg'
-//import IMG3 from '../../assets/portfolio3.jpg'
-//import IMG4 from '../../assets/portfolio4.jpg'
-// import IMG5 from '../../assets/portfolio5.jpg'
-// import IMG6 from '../../assets/portfolio6.jpg'
+import logo from '../../assets/square-favicon.png'
+import ifp from '../../assets/ifp.png'
+import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai'
 
 const Portfolio = () => {
+
+  const [appState, changeAppState] = useState({
+    active: null,
+    objects: [
+      {
+        id: 1,
+        title: "Portfolio website",
+        lang: "JavaScript",
+        framework: "React",
+        role: "Drafting, designing and coding",
+        demo: "www.sinezondi.com",
+        image: logo
+      },
+      {
+        id: 2,
+        title: "Inkatha Freedom Party mobile application",
+        lang: "Java",
+        framework: "Springboot",
+        role: "Writing & testing APIs",
+        demo: "www.sinezondi.com",
+        image: ifp
+      },
+      {
+        id: 3,
+        title: "Portfolio website",
+        lang: "JavaScript",
+        framework: "React",
+        role: "Drafting, designing and coding",
+        demo: "www.sinezondi.com",
+        image: logo
+      },
+      {
+        id: 4,
+        title: "Inkatha Freedom Party mobile application",
+        lang: "Java",
+        framework: "Springboot",
+        role: "Writing & testing APIs",
+        demo: "www.sinezondi.com",
+        image: ifp
+      },
+      {
+        id: 5,
+        title: "Portfolio website",
+        lang: "JavaScript",
+        framework: "React",
+        role: "Drafting, designing and coding",
+        demo: "www.sinezondi.com",
+        image: logo
+      },
+    ]
+  });
+
+  function toggleActive(index){
+    changeAppState({...appState, active: appState.objects[index]})
+  }
+
+  function toggleActiveStyles(index){
+    if(appState.objects[index] === appState.active){
+      return "active";
+    }
+    else{
+      return "inactive";
+    }
+  }
+
   return (
-    <section id='portfolio'>
+    <div id='portfolio'>
       <h5> My recent work </h5>
       <h2> Portfolio </h2>
 
-      <div>
-        <div className="container portfolio__container">
-          <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-              <img src={IMG1} alt='alternate'/>
-            </div>
-            <h3> This is a portfolio item title </h3>
-            <a href='www.github.com' target='_blank' className='btn'>GitHub</a>
-            <a href='www.github.com' target='_blank' className='btn btn-primary'>Live demo</a>
-          </article>
+      <div className='portfolio__container'>
+        <div className='leftArrow'>
+          <AiOutlineLeft className='btn arrow'/>
         </div>
 
-        <div className="container portfolio__container">
-          <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-              <img src={IMG1} alt='alternate'/>
-            </div>
-            <h3> This is a portfolio item title </h3>
-            <a href='www.github.com' target='_blank' className='btn'>GitHub</a>
-            <a href='www.github.com' target='_blank' className='btn btn-primary'>Live demo</a>
-          </article>
+        <div className='slide__container'>
+          <div className="portfolio__container">
+            {
+              appState.objects.map(({index, id, title, lang, framework, role, demo, image}) => {
+                return(
+                  <div className='portfolio__item'>
+                    <div className="item__summary__container">
+                      <div className="portfolio__item-image">
+                        <img src={image} alt='alternate'/>
+                      </div>
+                      <h5> {title} </h5>
+                    </div>
+
+                    <div className="item__detail__description">
+                      <div>
+                        <h3> Language(s): <br/> {lang} </h3> <br/>
+                        <h3> Framework(s): <br/> {framework} </h3> <br/>
+                        <h5> Role: <br/> {role} </h5> <br/>
+                        <a href={demo} target='_blank' rel="noreferrer" className='btn'>Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })
+            }
+          </div>
         </div>
 
-        <div className="container portfolio__container">
-          <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-              <img src={IMG1} alt='alternate'/>
-            </div>
-            <h3> This is a portfolio item title </h3>
-            <a href='www.github.com' target='_blank' className='btn'>GitHub</a>
-            <a href='www.github.com' target='_blank' className='btn btn-primary'>Live demo</a>
-          </article>
-        </div>
-
-        <div className="container portfolio__container">
-          <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-              <img src={IMG1} alt='alternate'/>
-            </div>
-            <h3> This is a portfolio item title </h3>
-            <a href='www.github.com' target='_blank' className='btn'>GitHub</a>
-            <a href='www.github.com' target='_blank' className='btn btn-primary'>Live demo</a>
-          </article>
-        </div>
-
-        <div className="container portfolio__container">
-          <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-              <img src={IMG1} alt='alternate'/>
-            </div>
-            <h3> This is a portfolio item title </h3>
-            <a href='www.github.com' target='_blank' className='btn'>GitHub</a>
-            <a href='www.github.com' target='_blank' className='btn btn-primary'>Live demo</a>
-          </article>
-        </div>
-
-        <div className="container portfolio__container">
-          <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-              <img src={IMG1} alt='alternate'/>
-            </div>
-            <h3> This is a portfolio item title </h3>
-            <a href='www.github.com' target='_blank' className='btn'>GitHub</a>
-            <a href='www.github.com' target='_blank' className='btn btn-primary'>Live demo</a>
-          </article>
+        <div className='rightArrow'>
+          <AiOutlineRight className='btn arrow'/>
         </div>
       </div>
-
-    </section>
+    </div>
   )
 }
 

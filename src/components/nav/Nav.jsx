@@ -30,8 +30,8 @@ NB: the useState used in the first anchor tag
         set it to the active class, and if
         not, then give it a value of nothing
       */}
-      <a href='#' 
-      className={activeNav === '#' ? 'active' : ''}>
+      {/* eslint-disable-next-line */}
+      <a href='#' className={activeNav === '#' ? 'active' : ''}>
         <FiHome/>
       </a>
 

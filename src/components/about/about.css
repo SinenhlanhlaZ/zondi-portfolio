@@ -8,7 +8,6 @@
     width: 100%;
     aspect-ratio: 1/1;/* height will always match the width */
     border-radius: 2rem;
-    background-color: rgb(255, 241, 241, .8);
     border: 1px solid #fff;
     display: grid;
     place-items: center;
