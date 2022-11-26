@@ -32,15 +32,13 @@
     transition: transform .8s;
     transform-style: preserve-3d;
     position: relative;
+    margin: 0 auto;
 }
 
 .portfolio__item:hover {
     border-color: var(--color-white);
     background: transparent;
 }
-
-/* .portfolio__item-image{
-} */
 
 .item__summary__container{
     height: 100%;

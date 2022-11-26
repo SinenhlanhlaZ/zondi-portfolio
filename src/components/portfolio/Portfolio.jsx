@@ -12,7 +12,7 @@ const Portfolio = () => {
       {
         id: 1,
         title: "Portfolio website",
-        lang: "JavaScript",
+        lang: "JavaScript, CSS, HTML",
         framework: "React",
         role: "Drafting, designing and coding",
         demo: "www.sinezondi.com",
@@ -26,33 +26,6 @@ const Portfolio = () => {
         role: "Writing & testing APIs",
         demo: "www.sinezondi.com",
         image: ifp
-      },
-      {
-        id: 3,
-        title: "Portfolio website",
-        lang: "JavaScript",
-        framework: "React",
-        role: "Drafting, designing and coding",
-        demo: "www.sinezondi.com",
-        image: logo
-      },
-      {
-        id: 4,
-        title: "Inkatha Freedom Party mobile application",
-        lang: "Java",
-        framework: "Springboot",
-        role: "Writing & testing APIs",
-        demo: "www.sinezondi.com",
-        image: ifp
-      },
-      {
-        id: 5,
-        title: "Portfolio website",
-        lang: "JavaScript",
-        framework: "React",
-        role: "Drafting, designing and coding",
-        demo: "www.sinezondi.com",
-        image: logo
       },
     ]
   });

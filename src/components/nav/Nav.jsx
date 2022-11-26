@@ -1,9 +1,7 @@
 import React from 'react'
 import './nav.css'
-import {FiHome} from 'react-icons/fi'
 import {FiUser} from 'react-icons/fi'
-import {MdCardTravel} from 'react-icons/md'
-import {RiHandCoinLine} from 'react-icons/ri'
+import {AiOutlineFolderOpen, AiOutlineProfile, AiOutlineHome} from 'react-icons/ai'
 import {BiMessageDetail} from 'react-icons/bi'
 import {useState} from 'react'
 
@@ -32,7 +30,7 @@ NB: the useState used in the first anchor tag
       */}
       {/* eslint-disable-next-line */}
       <a href='#' className={activeNav === '#' ? 'active' : ''}>
-        <FiHome/>
+        <AiOutlineHome/>
       </a>
 
       <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>
@@ -40,11 +38,11 @@ NB: the useState used in the first anchor tag
       </a>
 
       <a href='#experience' onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}>
-        <MdCardTravel/>
+        <AiOutlineProfile/>
       </a>
 
-      <a href='#services' onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}>
-        <RiHandCoinLine/>
+      <a href='#portfolio' onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}>
+        <AiOutlineFolderOpen/>
       </a>
 
       <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>
