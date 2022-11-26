@@ -6,6 +6,7 @@ import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai'
 
 const Portfolio = () => {
 
+  // eslint-disable-next-line
   const [appState, changeAppState] = useState({
     active: null,
     objects: [
@@ -30,18 +31,18 @@ const Portfolio = () => {
     ]
   });
 
-  function toggleActive(index){
-    changeAppState({...appState, active: appState.objects[index]})
-  }
+  // function toggleActive(index){
+  //   changeAppState({...appState, active: appState.objects[index]})
+  // }
 
-  function toggleActiveStyles(index){
-    if(appState.objects[index] === appState.active){
-      return "active";
-    }
-    else{
-      return "inactive";
-    }
-  }
+  // function toggleActiveStyles(index){
+  //   if(appState.objects[index] === appState.active){
+  //     return "active";
+  //   }
+  //   else{
+  //     return "inactive";
+  //   }
+  // }
 
   return (
     <div id='portfolio'>

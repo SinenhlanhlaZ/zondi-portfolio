@@ -37,6 +37,7 @@ body{
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/background-2.jpg);
+    background-attachment: fixed;
 }
 
 .container{
@@ -57,9 +58,8 @@ section {
     height: 100vh;
 }
 
-section > h2, section > h5{
+section > h2, section > h5, div > h2, div > h5{
     text-align: center;
-    color: var(--color-light);
 }
 
 section > h2{
