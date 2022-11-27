@@ -78,6 +78,17 @@
     color: var(--color-light);
 }
 
+.about__content button {
+    color: var(--color-white);
+    background-color: transparent;
+}
+
+.about__content button:hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
+
+}
+
 /* Media query for medium devices */
 @media screen and (max-width: 1024px) {
     .about__container {

@@ -4,6 +4,7 @@ import aboutMeImage from '../../assets/IMG_E8584.JPG'
 import {FiAward} from 'react-icons/fi'
 import {FiUsers} from 'react-icons/fi'
 import {FiFolderPlus} from 'react-icons/fi'
+import CV from '../../assets/cv.pdf'
 
 const About = () => {
   return (
@@ -49,8 +50,8 @@ const About = () => {
             ipsum, luctus in massa vel, malesuada blandit leo.
           </p>
 
-          <a href='#contact' className='btn btn-primary'>
-            I'm interested.
+          <a href={CV} target="_blank" className='btn btn-primary'>
+            View my CV
           </a>
           
         </div>
