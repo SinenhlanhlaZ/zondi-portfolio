@@ -27,7 +27,7 @@ const contact = () => {
         </div>
 
         <div className="form__container">
-          <form action="" method="POST">
+          <form action="https://getform.io/f/97a4cb1a-1286-4d38-b374-d358efad3473" method="POST">
             <input type="text" name="name" placeholder="Full name" required/>
             <input type="email" name="email" placeholder="Email address" required/>
             <textarea name="message" rows="7" placeholder="Your message" required></textarea>
