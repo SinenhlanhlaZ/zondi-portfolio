@@ -5,6 +5,7 @@ import {MdOutlineEmail} from 'react-icons/md'
 const contact = () => {
   return (
     <div id='contact'>
+      <br/>
       <h5> Get in touch! </h5>
       <h2> Contact me </h2>
 
@@ -26,7 +27,7 @@ const contact = () => {
         </form>
 
       </div>
-
+      <br/>
     </div>
   )
 }

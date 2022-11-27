@@ -8,7 +8,7 @@ import {FiFolderPlus} from 'react-icons/fi'
 const About = () => {
   return (
     <section id='about'>
-      
+      <br/>
       <h5> Who am I? </h5>
       <h2> About me </h2>
 
@@ -56,6 +56,7 @@ const About = () => {
         </div>
 
       </div>
+      <br/>
 
     </section>
   )

@@ -1,7 +1,6 @@
-#portfolio {
-    margin-top: 400px;
+#portfolio{
+    margin: 10rem 0rem;
 }
-
 
 #portfolio h2, #portfolio h5{
     text-align: center;

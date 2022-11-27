@@ -2,10 +2,79 @@ import React from 'react'
 import './experience.css'
 import {BsCheckCircleFill} from 'react-icons/bs'
 
+const frontend = [
+  {
+    title: "HTML",
+    frontendLevel: "Experienced"
+  },
+  {
+    title: "CSS",
+    frontendLevel: "Experienced"
+  },
+  {
+    title: "JavaScript",
+    frontendLevel: "Experienced"
+  },
+  {
+    title: "Flutter",
+    frontendLevel: "Beginner"
+  },
+  {
+    title: "Angular",
+    frontendLevel: "Intermediate"
+  },
+  {
+    title: "React",
+    frontendLevel: "Experienced"
+  },
+  {
+    title: "TypeScript",
+    frontendLevel: "Intermediate"
+  },
+]
+
+const backend = [
+  {
+    title: "Java",
+    backendLevel: "Experienced"
+  },
+  {
+    title: "Springboot",
+    backendLevel: "Experienced"
+  },
+  {
+    title: "Quarkus",
+    backendLevel: "Intermediate"
+  },
+  {
+    title: "MySQL",
+    backendLevel: "Experienced"
+  },
+  {
+    title: "H2",
+    backendLevel: "Intermediate"
+  },
+  {
+    title: "Linux",
+    backendLevel: "Beginner"
+  }
+]
+
+const other = [
+  {
+    title: "Git",
+    experienceLevel: "Experienced"
+  },
+  {
+    title: "GitHub",
+    experienceLevel: "Experienced"
+  }
+]
+
 const experience = () => {
   return (
     <section id='experience'>
-      
+      <br/>
       <h5> Experience: </h5>
 
       <h2> Languages and Frameworks </h2>
@@ -16,48 +85,17 @@ const experience = () => {
           <br/>
 
           <div className='experience__content'>
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
-            </article>
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>CSS</h4>
-              <small className='text-light'>Experienced</small>
-            </article>
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>Javascript</h4>
-              <small className='text-light'>Experienced</small>
-            </article>  
-
-            <article className='experience__details'>  
-              <BsCheckCircleFill/>
-              <h4>Flutter</h4>
-              <small className='text-light'>Beginner</small>
-            </article>
-
-            <article className='experience__details'>  
-              <BsCheckCircleFill/>
-              <h4>Angular</h4>
-              <small className='text-light'>Beginner</small>
-            </article>
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>React</h4>
-              <small className='text-light'>Experienced</small>
-            </article>
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>Typescript</h4>
-              <small className='text-light'>Intermediate</small>
-            </article>
-              
+            {
+              frontend.map(({index, title, frontendLevel}) => {
+                return(
+                  <article className='experience__details'>
+                    <BsCheckCircleFill/>
+                    <h4>{title}</h4>
+                    <small className='text-light'> {frontendLevel} </small>
+                  </article>
+                )
+              })
+            }
           </div>
         </div>
 
@@ -65,61 +103,43 @@ const experience = () => {
           
           <h3> Backend Development </h3>
           <br/>
-
           <div className='experience__content'>
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>Java</h4>
-              <small className='text-light'>Experienced</small>
-            </article>
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>Springboot</h4>
-              <small className='text-light'>Experienced</small>
-            </article>  
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>Quarkus</h4>
-              <small className='text-light'>Intermediate</small>
-            </article>  
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>MySQL</h4>
-              <small className='text-light'> Experienced </small>
-            </article>
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4> H2 </h4>
-              <small className='text-light'> Intermediate </small>
-            </article>
+            {
+              backend.map(({index, title, backendLevel}) => {
+                return(
+                  <article className='experience__details'>
+                    <BsCheckCircleFill/>
+                    <h4> {title} </h4>
+                    <small className='text-light'> {backendLevel} </small>
+                  </article>
+                )
+              })
+            }
 
             <br/><br/>
-            <small className='text-light'>
-              **I also have a lot of experience in creating
-              REST APIs**
-            </small>
           </div>
         </div>
 
         <div className='experience__content'>
+          <h3> Other experience </h3>
+          <br/>
 
-            <h3> Other experience </h3>
-            <br/>
-
-            <article className='experience__details'>
-              <BsCheckCircleFill/>
-              <h4>Git</h4>
-              <small className='text-light'>Experienced</small>
-            </article>
-
+          {
+            other.map(({index, title, experienceLevel}) => {
+              return(
+                <article className='experience__details'>
+                  <BsCheckCircleFill/>
+                  <h4>{title}</h4>
+                  <small className='text-light'>{experienceLevel}</small>
+                </article>
+              )
+            })
+          }
         </div>
 
       </div>
-
+      <br/>
+      
     </section>
   )
 }

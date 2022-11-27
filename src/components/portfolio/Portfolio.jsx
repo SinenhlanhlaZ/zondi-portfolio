@@ -46,6 +46,7 @@ const Portfolio = () => {
 
   return (
     <div id='portfolio'>
+      <br/><br/>
       <h5> My recent work </h5>
       <h2> Portfolio </h2>
 
@@ -86,6 +87,7 @@ const Portfolio = () => {
           <AiOutlineRight className='btn arrow'/>
         </div>
       </div>
+      <br/>
     </div>
   )
 }
