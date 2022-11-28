@@ -1,0 +1,15 @@
+#athlete__footer{
+    height: auto;
+    padding: 2rem 0rem;
+    margin: 2rem 0rem;
+}
+
+#athlete__footer > div{
+    display: flex;
+    flex-direction: column;
+}
+
+#athlete__footer small{
+    padding: 1rem 0rem;
+    text-align: center;
+}

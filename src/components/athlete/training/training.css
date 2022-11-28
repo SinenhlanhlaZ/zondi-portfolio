@@ -1,0 +1,19 @@
+#training{
+    height: auto;
+    padding: 1rem 0rem;
+    margin: 8rem 0rem;
+}
+
+#training h1{
+    text-align: center;
+}
+
+.training__container{
+    margin: 2rem 0rem;
+}
+
+.frame__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

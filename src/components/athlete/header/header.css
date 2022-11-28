@@ -1,0 +1,77 @@
+#athlete{
+    height: auto;
+    padding: 2rem 0rem;
+}
+
+.athlete__header__container{
+    padding: 0rem 2rem;
+}
+
+.athlete__intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro__container h5{
+    text-align: left;
+}
+
+.athlete__image__container{
+    width: 35%;
+    height: 34rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    border: 1px solid var(--color-white);
+    background-image: url("../../../assets/cycling.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.athlete__image__container:hover .athlete__info{
+    display: block;
+}
+
+.socials__link__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: fixed;
+    left: 95%;
+    bottom: 0rem;
+}
+
+.socials__link__container::after{
+    content: "";
+    width: 1px;
+    height: 8rem;
+    background: var(--color-white);
+}
+
+.social__icon{
+    font-size: 2rem;
+}
+
+.header__image{
+    display: none;
+}
+
+.athlete__info{
+    border: 1px solid white;
+    height: 100%;
+    background-color: var(--color-white);
+    display: none;
+    opacity: .7;
+}
+
+
+.athlete__info li{
+    text-align: center;
+    padding: 1rem 0rem;
+    color: var(--color-black)
+}
+
+.athlete__info ul{
+    padding: 10% 0%;
+}

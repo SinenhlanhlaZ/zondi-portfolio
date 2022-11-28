@@ -50,7 +50,7 @@ const About = () => {
             ipsum, luctus in massa vel, malesuada blandit leo.
           </p>
 
-          <a href={CV} target="_blank" className='btn btn-primary'>
+          <a href={CV} target="_blank" className='btn btn-primary' rel="noreferrer">
             View my CV
           </a>
           
