@@ -101,31 +101,3 @@ img{
     width: 100%;
     object-fit: cover;
 }
-
-
-/* medium screen devices */
-@media screen and (max-width: 1042px){
-    .container{
-        width: var(--container-width-md);
-    }
-
-    section{
-        margin-top: 6rem;
-    }
-}
-
-/* small screen devices */
-@media screen and (max-width: 600px){
-
-    /** {
-        overflow-x: hidden;
-    }*/
-
-    .container{
-        width: var(--container-width-sm);
-    }
-
-    section > h2{
-        margin-bottom: 2rem;
-    }
-}

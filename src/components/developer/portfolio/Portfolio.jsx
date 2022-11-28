@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './portfolio.css'
-import logo from '../../assets/square-favicon.png'
-import ifp from '../../assets/ifp.png'
+import logo from '../../../assets/square-favicon.png'
+import ifp from '../../../assets/ifp.png'
 import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai'
 
 const Portfolio = () => {

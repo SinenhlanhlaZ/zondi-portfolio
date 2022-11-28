@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 
 import {BsInstagram} from 'react-icons/bs'
-import logo from '../../assets/square-favicon.png'
+import logo from '../../../assets/square-favicon.png'
 
 const Footer = () => {
   return (

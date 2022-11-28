@@ -1,9 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './nav.css'
 import {FiUser} from 'react-icons/fi'
 import {AiOutlineFolderOpen, AiOutlineProfile, AiOutlineHome} from 'react-icons/ai'
 import {BiMessageDetail} from 'react-icons/bi'
-import {useState} from 'react'
 
 const Nav = () => {
   const [activeNav, setActiveNav] 
