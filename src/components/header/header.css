@@ -41,26 +41,3 @@ header{
     padding: 0;
     border: 1px solid white;
 }
-
-/* Media query for medium devices */
-@media screen and (max-width: 1024px) {
-    header {
-        height: 68vh;
-    }
-}
-
-/* Media query for small devices */
-@media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-    }
-
-    .header__socials,
-    .scroll__down {
-        display: none;
-    }
-
-    .me {
-        display: none;
-    }
-}
