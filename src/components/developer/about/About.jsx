@@ -2,7 +2,6 @@ import React from 'react'
 import './about.css'
 import aboutMeImage from '../../../assets/IMG_E8584.JPG'
 import {FiAward} from 'react-icons/fi'
-import {FiUsers} from 'react-icons/fi'
 import {FiFolderPlus} from 'react-icons/fi'
 import CV from '../../../assets/cv.pdf'
 
