@@ -1,7 +1,8 @@
 #about{
     height: auto;
+    border: 1px solid #fff;
+    margin: 10rem 0rem;
 }
-
 .about__container {
     display: grid;
     grid-template-columns: 35% 50%;
@@ -36,9 +37,8 @@
 }
 
 .about__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* 
@@ -52,6 +52,7 @@
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
+    width: 20%;
 }
 
 .about__card:hover {
@@ -76,6 +77,11 @@
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+    font-weight: 100;
+}
+
+.about__content p a{
+    text-decoration: underline;
 }
 
 .about__content button {
@@ -107,24 +113,103 @@
 
 }
 
-/* Media query for small devices */
-@media screen and (max-width: 600px) {
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1920px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 1536px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 1080px){
+    
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
     }
 
-    .about_cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    .about__me{
+        width: 50%;
+        margin: 0 auto;
     }
 
-    .about__content {
+    .about__content{
         text-align: center;
     }
+}
 
-    .about__content p {
-        margin: 1.5rem 0;
+@media screen and (max-width: 1024px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 950px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 896px){
+    /* No responsive CSS required */
+}
+
+/* iPhone 12 Pro (landscape) */
+@media screen and (max-width: 844px){
+    .about__me{
+        display: none;
+    }
+}
+
+/* iPad Air (potrait) */
+@media screen and (max-width: 820px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 800px){
+    /* No responsive CSS required */
+}
+
+/* iPad (potrait) */
+@media screen and (max-width: 768px){
+    /* No responsive CSS required */
+}
+
+/* iPhone 8+ (landscape) */
+@media screen and (max-width: 736px){
+    /* No responsive CSS required */
+}
+
+/* iPhone 6 (landscape) */
+@media screen and (max-width: 667px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 414px){
+    
+    .about__cards{
+        justify-content: space-around;
     }
 
+    .about__card{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 360px){
+    .about__card{
+        padding: 2rem 1rem;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    /* No responsive CSS required */
 }

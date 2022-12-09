@@ -27,31 +27,32 @@ const About = () => {
             <article className='about__card'>
               <FiAward className='about__icon'/>
               <h5> Experience </h5>
-              <small> 1 year work experience </small>
-            </article>
-
-            <article className='about__card'>
-              <FiUsers className='about__icon'/>
-              <h5> Clients </h5>
-              <small> 10+ nation wide </small>
+              <small> 6 months work experience </small>
             </article>
 
             <article className='about__card'>
               <FiFolderPlus className='about__icon'/>
               <h5> Projects </h5>
-              <small> None completed </small>
+              <small> 2 completed </small><br/>
+              <small> 1 in progress </small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia 
-            odio vitae odio luctus rhoncus. Ut mauris orci, vehicula non enim in, sodales 
-            ultrices purus. Phasellus fringilla aliquam nisi sed efficitur. Praesent turpis 
-            ipsum, luctus in massa vel, malesuada blandit leo.
+            My name is Sinenhlanhla (Sine for short, pronounced See-neh). 
+            Though still new to the industry and its processes, I have found 
+            joy in developing web & mobile applications, front and backend. 
+            I am self taught in most of the things I know, so that is one of my  
+            strengths, being a quick and efficient learner. I have learned a lot 
+            through networking, and that is thanks to 
+            my mentor, <a href="https://www.linkedin.com/in/bonginhlanhla-mkhize-25a16024/" target="_blank" rel="noreferrer">Bonginhlanhla Mkhize</a>!
+            <br/><br/>
+            I am currently working under <a href="https://www.zamambo.co.za" target="_blank" rel="noreferrer">Zamambo Telecoms</a> 
+            (based in Cape Town), but I am open to any new experiences.
           </p>
 
           <a href={CV} target="_blank" className='btn btn-primary' rel="noreferrer">
-            View my CV
+            View CV
           </a>
           
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import About from '../developer/about/About'
+import About from '../developer/about/About'
 // import Contact from '../developer/contact/contact'
 // import Experience from '../developer/experience/experience'
 // import Footer from '../developer/footer/Footer'
@@ -13,8 +13,8 @@ const Developer = () => {
     <div>
         <Header/>
         <Nav/>
-        {/* <About/>
-        <Experience/>
+        <About/>
+        {/* <Experience/>
         <Portfolio/>
         <Contact/>
         <Footer/> */}
