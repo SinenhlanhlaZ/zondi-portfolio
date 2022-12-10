@@ -1,5 +1,7 @@
 #experience{
     height: auto;
+    border: 1px solid white;
+    margin: 10rem 0rem;
 }
 
 .experience__container {
@@ -8,18 +10,15 @@
     gap: 2rem;
 }
 
-.experience__content{
-
-}
-
-.experience__container > div {
-    padding: 2.4rem 5rem;
+.experience__container > div,
+.experience__other {
+    /* top, right, bottom, left */
+    padding: 4rem 0rem 2rem 0rem;
     border-radius: 2rem;
     border: 1px solid #fff;
-    transition: var(--transition);
 }
 
-.experience__container h3 {
+#experience h3 {
     text-align: center;
 }
 
@@ -31,14 +30,151 @@
     align-items: center;
 }
 
-/* Media queries */
+.experience__other{
+    margin: 4rem 12.5%;
+}
 
-/* Medium sized screens */
-@media screen and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1920px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 1536px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 1080px){
+    #experience .experience__content{
+        margin: 4rem 12.8%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #experience .experience__content{
+        margin: 4rem 12.5%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    
+    /* Padding for heading of each div */
+    .experience__container > div {
+        padding-top: 3rem;
+    }
+
+    #experience .experience__content {
+        margin: 1rem 12.5%;
+    }
+
+    #experience h4{
+        font-size: 80%;
+    }
+
+    #experience small{
+        font-size: 50%;
+    }
+
+    /* Width for bottom div */
+    .experience__other{
+        padding: 3rem 0rem;
+        margin: 3rem 12.3%;
+    }
+
+    .experience__details{
+        width: 20%;
+    }
+
+    .experience__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .experience__other .experience__content{
+        grid-template-columns: 1fr 1fr;
+    }
     
 }
 
-/* Small sized screens */
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 896px){
+    /* No responsive CSS required */
+}
+
+/* iPhone 12 Pro (landscape) */
+@media screen and (max-width: 844px){
+    /* No responsive CSS required */
+}
+
+/* iPad Air (potrait) */
+@media screen and (max-width: 820px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 800px){
+    /* No responsive CSS required */
+}
+
+/* iPad (potrait) */
+@media screen and (max-width: 768px){
+    /* No responsive CSS required */
+}
+
+/* iPhone 8+ (landscape) */
+@media screen and (max-width: 736px){
+    /* No responsive CSS required */
+}
+
+/* iPhone 6 (landscape) */
+@media screen and (max-width: 667px){
+    #experience .container{
+        margin: 0 auto;
+    }
+
+    #experience .experience__content {
+        margin: 1rem 0;
+    }
+
+    .experience__container > div{
+        padding: 2rem 3.5rem;
+    }
+
+    .experience__content{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 414px){
+    .experience__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience__content{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 360px){
+    /* No responsive CSS required */
+}
+
+@media screen and (max-width: 320px){
+    /* No responsive CSS required */
 }

@@ -83,16 +83,15 @@ const experience = () => {
         <div className='experience_frontend'>
           <h3> Frontend Development </h3>
           <br/>
-
           <div className='experience__content'>
             {
               frontend.map(({index, title, frontendLevel}) => {
                 return(
-                  <article className='experience__details'>
+                  <div className='experience__details'>
                     <BsCheckCircleFill/>
                     <h4>{title}</h4>
                     <small className='text-light'> {frontendLevel} </small>
-                  </article>
+                  </div>
                 )
               })
             }
@@ -100,44 +99,43 @@ const experience = () => {
         </div>
 
         <div className='experience__backend'>
-          
           <h3> Backend Development </h3>
           <br/>
           <div className='experience__content'>
             {
               backend.map(({index, title, backendLevel}) => {
                 return(
-                  <article className='experience__details'>
+                  <div className='experience__details'>
                     <BsCheckCircleFill/>
                     <h4> {title} </h4>
                     <small className='text-light'> {backendLevel} </small>
-                  </article>
+                  </div>
                 )
               })
             }
 
-            <br/><br/>
           </div>
         </div>
+      </div>
 
-        <div className='experience__content'>
-          <h3> Other experience </h3>
-          <br/>
-
+      <div className='experience__other'>
+        <h3> Other experience </h3>
+        <br/>
+        <div className='experience__content'> 
           {
             other.map(({index, title, experienceLevel}) => {
               return(
-                <article className='experience__details'>
+                <div className='experience__details'>
                   <BsCheckCircleFill/>
                   <h4>{title}</h4>
                   <small className='text-light'>{experienceLevel}</small>
-                </article>
+                </div>
               )
             })
           }
         </div>
-
       </div>
+
       <br/>
       
     </section>
