@@ -9,7 +9,6 @@
 /coverage
 
 # production
-deploy.sh
 
 
 # misc
@@ -22,3 +21,5 @@ deploy.sh
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+deploy.sh
