@@ -56,7 +56,15 @@ const backend = [
   },
   {
     title: "Linux",
-    backendLevel: "Beginner"
+    backendLevel: "Intermediate"
+  },
+  {
+    title: "SQL",
+    backendLevel: "Intermediate"
+  },
+  {
+    title: "ShellScript",
+    backendLevel: "Intermediate"
   }
 ]
 
