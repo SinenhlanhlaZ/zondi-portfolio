@@ -8,7 +8,7 @@ const frontend = [
     frontendLevel: "Experienced"
   },
   {
-    title: "CSS",
+    title: "CSS/SCSS",
     frontendLevel: "Experienced"
   },
   {
@@ -18,10 +18,6 @@ const frontend = [
   {
     title: "Flutter",
     frontendLevel: "Beginner"
-  },
-  {
-    title: "Angular",
-    frontendLevel: "Intermediate"
   },
   {
     title: "React",
@@ -63,8 +59,8 @@ const backend = [
     backendLevel: "Intermediate"
   },
   {
-    title: "ShellScript",
-    backendLevel: "Intermediate"
+    title: "Bash",
+    backendLevel: "Experienced"
   }
 ]
 

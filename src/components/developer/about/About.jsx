@@ -26,14 +26,15 @@ const About = () => {
             <article className='about__card'>
               <FiAward className='about__icon'/>
               <h5> Experience </h5>
-              <small> 6 months work experience </small>
+              <small> 2 years </small>
             </article>
 
             <article className='about__card'>
               <FiFolderPlus className='about__icon'/>
               <h5> Projects </h5>
-              <small> 2 completed </small><br/>
-              <small> 1 in progress </small>
+              <small> 2 completed </small>
+              {/* <br/> */}
+              {/* <small> 1 in progress </small> */}
             </article>
           </div>
 
@@ -46,11 +47,11 @@ const About = () => {
             through networking, and that is thanks to 
             my mentor, <a href="https://www.linkedin.com/in/bonginhlanhla-mkhize-25a16024/" target="_blank" rel="noreferrer">Bonginhlanhla Mkhize</a>!
             <br/><br/>
-            I am currently working under <a href="https://www.zamambo.co.za" target="_blank" rel="noreferrer">Zamambo Telecoms</a> 
-            (based in Cape Town), but I am open to any new experiences.
+            I am an intern at <a href="https://www.zamambo.co.za" target="_blank" rel="noreferrer">Zamambo Telecoms</a> 
+            (based in Cape Town), who is open to any new experiences.
           </p>
 
-          <a href={CV} target="_blank" className='btn btn-primary' rel="noreferrer">
+          <a href='#' target="_blank" className='btn btn-primary' rel="noreferrer">
             View CV
           </a>
           
