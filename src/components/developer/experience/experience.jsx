@@ -23,10 +23,6 @@ const frontend = [
     title: "React",
     frontendLevel: "Experienced"
   },
-  {
-    title: "TypeScript",
-    frontendLevel: "Intermediate"
-  },
 ]
 
 const backend = [
@@ -39,20 +35,8 @@ const backend = [
     backendLevel: "Experienced"
   },
   {
-    title: "Quarkus",
-    backendLevel: "Intermediate"
-  },
-  {
     title: "MySQL",
     backendLevel: "Experienced"
-  },
-  {
-    title: "H2",
-    backendLevel: "Intermediate"
-  },
-  {
-    title: "Linux",
-    backendLevel: "Intermediate"
   },
   {
     title: "SQL",
@@ -61,7 +45,11 @@ const backend = [
   {
     title: "Bash",
     backendLevel: "Experienced"
-  }
+  },
+  {
+    title: "Nginx",
+    backendLevel: "Intermediate"
+  },
 ]
 
 const other = [
@@ -72,7 +60,27 @@ const other = [
   {
     title: "GitHub",
     experienceLevel: "Experienced"
-  }
+  },
+  {
+    title: "Firebase",
+    experienceLevel: "Experienced"
+  },
+  {
+    title: "GitHub Actions",
+    experienceLevel: "Beginner"
+  },
+  {
+    title: "Figma",
+    experienceLevel: "Beginner"
+  },
+  {
+    title: "Swagger",
+    experienceLevel: "Experienced"
+  },
+  {
+    title: "Postman",
+    experienceLevel: "Experienced"
+  },
 ]
 
 const experience = () => {

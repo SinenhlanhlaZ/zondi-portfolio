@@ -6,7 +6,6 @@ import Experience from '../developer/experience/experience'
 import Footer from '../developer/footer/Footer'
 import Header from '../developer/header/Header'
 import Nav from '../developer/nav/Nav'
-// import Portfolio from '../developer/portfolio/Portfolio'
 
 const Developer = () => {
   return (
@@ -15,7 +14,6 @@ const Developer = () => {
         <Nav/>
         <About/>
         <Experience/>
-        {/* <Portfolio/> */}
         <Contact/>
         <Footer/>
     </div>

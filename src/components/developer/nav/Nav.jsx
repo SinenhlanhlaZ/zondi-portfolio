@@ -5,8 +5,7 @@ import {AiOutlineFolderOpen, AiOutlineProfile, AiOutlineHome} from 'react-icons/
 import {BiMessageDetail} from 'react-icons/bi'
 
 const Nav = () => {
-  const [activeNav, setActiveNav] 
-  = useState('#')
+  const [activeNav, setActiveNav] = useState('#')
   /*
   -default useState is the top of the page which
   has an id value of '#'
@@ -40,7 +39,7 @@ NB: the useState used in the first anchor tag
         <AiOutlineProfile/>
       </a>
 
-      <a href='#portfolio' onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}>
+      <a href='#portfolio' onClick={() => setActiveNav('#portfolio')} className={activeNav === '#services' ? 'active' : ''}>
         <AiOutlineFolderOpen/>
       </a>
 

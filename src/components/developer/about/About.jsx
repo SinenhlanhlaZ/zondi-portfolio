@@ -3,7 +3,7 @@ import './about.css'
 import aboutMeImage from '../../../assets/IMG_E8584.JPG'
 import {FiAward} from 'react-icons/fi'
 import {FiFolderPlus} from 'react-icons/fi'
-import CV from '../../../assets/cv.pdf'
+import CV from '../../../assets/cv_sinenhlanhla.pdf'
 
 const About = () => {
   return (
@@ -28,30 +28,21 @@ const About = () => {
               <h5> Experience </h5>
               <small> 2 years </small>
             </article>
-
-            <article className='about__card'>
-              <FiFolderPlus className='about__icon'/>
-              <h5> Projects </h5>
-              <small> 2 completed </small>
-              {/* <br/> */}
-              {/* <small> 1 in progress </small> */}
-            </article>
           </div>
 
           <p>
-            My name is Sinenhlanhla (Sine for short, pronounced See-neh). 
-            Though still new to the industry and its processes, I have found 
-            joy in developing web & mobile applications, front and backend. 
-            I am self taught in most of the things I know, so that is one of my  
-            strengths, being a quick and efficient learner. I have learned a lot 
-            through networking, and that is thanks to 
-            my mentor, <a href="https://www.linkedin.com/in/bonginhlanhla-mkhize-25a16024/" target="_blank" rel="noreferrer">Bonginhlanhla Mkhize</a>!
-            <br/><br/>
-            I am an intern at <a href="https://www.zamambo.co.za" target="_blank" rel="noreferrer">Zamambo Telecoms</a> 
-            (based in Cape Town), who is open to any new experiences.
+            My name is Sinenhlanhla (Sine for short, pronounced See-neh). <br/><br/>
+            I'm a software engineer with a strong passion for building impactful 
+            web and mobile applications. While much of my technical knowledge is 
+            self-taught, I've honed my skills through hands-on projects and real-world 
+            problem-solving. I'm known for my ability to quickly learn and adapt to new 
+            technologies, which allows me to stay ahead in an ever-evolving field. I thrive 
+            on creating intuitive, user-friendly solutions and enjoy the process of turning 
+            complex ideas into functional, secure applications. <br/><br/>I'm always eager to learn, 
+            collaborate, and contribute to projects that make a difference.
           </p>
 
-          <a href='#' target="_blank" className='btn btn-primary' rel="noreferrer">
+          <a href={CV} target="_blank" className='btn btn-primary' rel="noreferrer">
             View CV
           </a>
           

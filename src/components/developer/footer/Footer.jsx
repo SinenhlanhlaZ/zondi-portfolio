@@ -37,7 +37,7 @@ const Footer = () => {
       
 
       <div className="">
-        <small>&copy; 2023 Sinenhlanhla Zondi </small>
+        <small>&copy; 2024 Sinenhlanhla Zondi </small>
       </div>
 
     </div>
